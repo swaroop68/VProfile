@@ -2,5 +2,5 @@ FROM ubuntu
 WORKDIR /app
 RUN apt update -y
 RUN apt install -y python3
-COPY ./hello-world.py /app
+COPY . /app
 CMD python3 hello-world.py
