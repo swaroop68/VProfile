@@ -1,4 +1,6 @@
 FROM ubuntu
+WORKDIR /app
 RUN apt update -y
 RUN apt install -y python3
-COPY code/hello-world.py .
+COPY ./hello-world.py /app
+CMD python3 hello-world.py
