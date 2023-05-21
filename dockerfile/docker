@@ -1,4 +1,4 @@
 FROM ubuntu
 RUN apt update -y
 RUN apt install -y python3
-COPY Code/hello-world.py .
+COPY code/hello-world.py .
