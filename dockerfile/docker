@@ -1,2 +1,3 @@
-docker login -u username -p password
-docker build -t $imagename:$version
+FROM ubuntu
+RUN apt update -y
+RUN apt install -y apache2
