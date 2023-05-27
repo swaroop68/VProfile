@@ -1,3 +1,5 @@
 FROM ubuntu
 WORKDIR /app
 RUN apt -y install apache2
+CP /helloworld.py /app
+CMD 
